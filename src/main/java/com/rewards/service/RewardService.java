@@ -27,7 +27,7 @@ public class RewardService {
     }
 
     public void save(Transaction transaction){
-        transaction.setAmountOfTransaction(calculate(transaction.getAmountOfTransaction()));
+        transaction.setAmountOfRewards(calculate(transaction.getAmountOfTransaction()));
         rewardsRepository.save(transaction);
 
     }
